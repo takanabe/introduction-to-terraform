@@ -3,7 +3,7 @@
 ## Table of contents
 
 * [What is Terraform?](./PRESENTAION.md)
-* [Hands-on manual](./HANDSON.md)
+* [Hands-on 1: Introduction Terraform](./HANDSON1.md)
 
 ## Useful references
 

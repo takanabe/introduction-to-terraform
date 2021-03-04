@@ -25,7 +25,7 @@ Through this session you will experience:
 
 The AWS resources surrounded by the red rectangle is your today's deploy target.
 
-![](img/overview_of_hands_on_results.drawio.svg)
+![](img/hands-on-1/overview_of_hands_on_results.drawio.svg)
 
 ## Prerequisite
 
@@ -41,7 +41,7 @@ Please install the following software in advance for this hands-on.
 
 During this hands-on, you will use AWS account for development purpose. So, you need to assume role from your production IAM role to the development IAM role.
 
-![](img/assume-role.drawio.svg)
+![](img/hands-on-1/assume-role.drawio.svg)
 
 Note: `arn:aws:iam::123456789:role/IAM_ROLE_YOU_WANT_TO_ASSUME` will be provided by Taka during the hands-on.
 
@@ -205,7 +205,7 @@ $ tree .terraform
 
 Now you are ready to deploy your AWS resources using Terraform!! As the first challenge, let's deploy a new S3 bucket together. The document about S3 bucket resource is [here](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket)
 
-![](./img/phase4.drawio.svg)
+![](./img/hands-on-1/phase4.drawio.svg)
 
 ### Requirements of the new S3 bucket
 
@@ -314,7 +314,7 @@ Cool! you successfully deployed a new S3 bucket using Terraform. Now, you've und
 
 ### Hands-on (5min)
 
-![](./img/phase5.drawio.svg)
+![](./img/hands-on-1/phase5.drawio.svg)
 
 I will give you 5 min. Please deploy a new DynamoDB table with the new file name `dynamodb.tf` and with the following requirements.
 
@@ -386,7 +386,7 @@ The document on how we can setup the remote state storage is doicumented [here](
 
 ### Hands-on (5min)
 
-![](./img/phase6.drawio.svg)
+![](./img/hands-on-1/phase6.drawio.svg)
 
 * Create a new file `backend.tf` and add remote backend configurations which uses
   * `search-infra-study-shared` as bucket
@@ -463,7 +463,7 @@ To eliminate the inconsistent state issues, let's share state locks with the tea
 
 ### Hands-on (5min)
 
-![](img/phase7.drawio.svg)
+![](img/hands-on-1/phase7.drawio.svg)
 
 * Add `dynamodb_table = "terraform-state-lock"` to your `backend.tf`
 
@@ -495,13 +495,13 @@ Taka will carry on this phase instead of you since, he could prepare for cleanin
 
 ### Hands-on
 
-![](img/phase8.drawio.svg)
+![](img/hands-on-1/phase8.drawio.svg)
 
 ## Clean up!!
 
 Congratulations!  You completed the all hands-on!
 
-![](img/overview_of_hands_on_results.svg)
+![](img/hands-on-1/overview_of_hands_on_results.svg)
 
 Before you leave this session, please remove all AWS resources you configured
 
